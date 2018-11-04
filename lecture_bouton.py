@@ -1,10 +1,13 @@
 import time
 from RPi import GPIO
-b1=17
-print b1
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(b1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(17, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(4, GPIO.OUT)
 while True:
-        inputval = GPIO.input(b1)
-        print inputval
-        time.sleep(1)
+        inputval = GPIO.input(17)
+        if inputval == 0 :
+		GPIO.output(4, GPIO.HIGH)
+	if inputval == 1 :
+		GPIO.output(4, GPIO.LOW)
+        time.sleep(0.1)
