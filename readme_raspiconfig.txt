@@ -18,4 +18,6 @@ premier login : pi / rqspberry (clavier en anglais donc le a est un q)
  cd github
  git clone https://github.com/ptrouillard/piwork.git
  
+ # Générer la clé publique SSH et la déposer sur github
+ ssh-keygen 
  
