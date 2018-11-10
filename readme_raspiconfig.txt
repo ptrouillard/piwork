@@ -18,4 +18,8 @@ premier login : pi / rqspberry (clavier en anglais donc le a est un q)
  cd github
  git clone https://github.com/ptrouillard/piwork.git
  
+ # configuration de GIT
+ git config --global user.email ptrouillard@gmail.com
+ git config --global user.name pedro
+ 
  
