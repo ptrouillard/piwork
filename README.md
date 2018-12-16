@@ -10,3 +10,5 @@ https://www.framboise314.fr/scratch-raspberry-pi-composants/led-rgb/
 Pilotage de 2 sondes de température:
 http://espace-raspberry-francais.fr/Composants/Sonde-de-temperature-DS18B20-sur-Raspberry-Francais/
 
+Pilotage de la sonde pression atomsphérique:
+https://raspberrybelgium.wordpress.com/2015/07/20/bonjour-tout-le-monde/
