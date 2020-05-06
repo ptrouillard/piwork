@@ -36,8 +36,8 @@ def arret(moteurNum) :
     GPIO.output(Pins[moteurNum - 1][2], GPIO.LOW)
     print("Moteur", moteurNum, "arret.")
 
-sens1(1)
-sleep(0.5)
+sens2(1)
+sleep(11.2)
 arret(1)
 	
 

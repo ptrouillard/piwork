@@ -17,27 +17,11 @@ GPIO.setup(M1_En, GPIO.OUT)
 GPIO.setup(M1_In1, GPIO.OUT)
 GPIO.setup(M1_In2, GPIO.OUT)
 
-# Voir aide dans le tuto
-M1_Vitesse = GPIO.PWM(M1_En, 100)
-M1_Vitesse.start(100)
-
-def sens1(moteurNum) :
-    GPIO.output(Pins[moteurNum - 1][1], GPIO.HIGH)
-    GPIO.output(Pins[moteurNum - 1][2], GPIO.LOW)
-    print("Moteur", moteurNum, "tourne dans le sens 1.")
-
-def sens2(moteurNum) :
-    GPIO.output(Pins[moteurNum - 1][1], GPIO.LOW)
-    GPIO.output(Pins[moteurNum - 1][2], GPIO.HIGH)
-    print("Moteur", moteurNum, "tourne dans le sens 2.")
-
 def arret(moteurNum) :
     GPIO.output(Pins[moteurNum - 1][1], GPIO.LOW)
     GPIO.output(Pins[moteurNum - 1][2], GPIO.LOW)
     print("Moteur", moteurNum, "arret.")
 
-sens1(1)
-sleep(0.5)
 arret(1)
 	
 
