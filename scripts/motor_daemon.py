@@ -43,10 +43,13 @@ while True :
 		print "Fermeture automatique de la porte du poulailler. Veuillez verifier que les poules sont bien rentrees."
 		down(1)	
 		sleep(11.2)
+		print "Arret du moteur"
+		stop(1)
 	if date.hour == 7 and date.minute == 0:
 		print "Ouverture du poulailler. Les poules vont etre liberees."
 		up(1)
 		sleep(12)
-	arret(1)
-	
+		print "Arret du moteur"
+		stop(1)
+	sleep(60)	
 
