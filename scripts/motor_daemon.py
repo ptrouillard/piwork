@@ -39,6 +39,7 @@ def stop(moteurNum) :
 
 while True :
 	date = datetime.datetime.now()
+        print "Heure ",date.hour,":",date.minute
 	if date.hour == 21 and date.minute == 0:
 		print "Fermeture automatique de la porte du poulailler. Veuillez verifier que les poules sont bien rentrees."
 		down(1)	
