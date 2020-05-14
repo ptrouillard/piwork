@@ -1,4 +1,5 @@
 import RPi.GPIO as GPIO
+import datetime
 from time import sleep
 
 # Definition des pins
@@ -21,23 +22,22 @@ GPIO.setup(M1_In2, GPIO.OUT)
 M1_Vitesse = GPIO.PWM(M1_En, 100)
 M1_Vitesse.start(100)
 
-def sens1(moteurNum) :
+def up(moteurNum) :
     GPIO.output(Pins[moteurNum - 1][1], GPIO.HIGH)
     GPIO.output(Pins[moteurNum - 1][2], GPIO.LOW)
     print("Moteur", moteurNum, "tourne dans le sens 1.")
 
-def sens2(moteurNum) :
+def down(moteurNum) :
     GPIO.output(Pins[moteurNum - 1][1], GPIO.LOW)
     GPIO.output(Pins[moteurNum - 1][2], GPIO.HIGH)
     print("Moteur", moteurNum, "tourne dans le sens 2.")
 
-def arret(moteurNum) :
+def stop(moteurNum) :
     GPIO.output(Pins[moteurNum - 1][1], GPIO.LOW)
     GPIO.output(Pins[moteurNum - 1][2], GPIO.LOW)
     print("Moteur", moteurNum, "arret.")
 
-sens2(1)
-sleep(0.5)
-arret(1)
-	
+up(1)
+sleep(12)
+stop(1)
 
