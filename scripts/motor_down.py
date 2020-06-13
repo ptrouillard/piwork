@@ -37,7 +37,7 @@ def arret(moteurNum) :
     print("Moteur", moteurNum, "arret.")
 
 sens2(1)
-sleep(11.2)
+sleep(3)
 arret(1)
 	
 
