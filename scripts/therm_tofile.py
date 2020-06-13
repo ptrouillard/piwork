@@ -27,5 +27,5 @@ while True :
     contenuFich1 = lireFichier("/sys/bus/w1/devices/28-020f917745e2/w1_slave")
     temperature2 = recupTemp(contenuFich2)
     temperature1 = recupTemp(contenuFich1)
-    sauvegarde(date, temperature1, temperature2,"Temperature.csv")
+    sauvegarde(date, temperature1, temperature2,"/home/pi/data/temperatures.csv")
     time.sleep(60)
